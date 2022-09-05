@@ -1,0 +1,31 @@
+/* UNIR TABELAS DE DADOS */
+
+-- Existem dados em comum entre as tabelas ID e HISTORICOS_BANCO?
+SELECT * FROM ID
+INNER JOIN HISTORICOS_BANCO AS HB
+ON ID.ID_HISTORICO = HB.ID_HISTORICO;
+
+-- Existem dados em comum entre as tabelas ID e EMPRESTIMOS?
+SELECT * FROM ID
+INNER JOIN EMPRESTIMOS AS E
+ON ID.ID_EMPRESTIMO = E.ID_EMPRESTIMO;
+
+-- Existem dados em comum entre as tabelas ID e DADOS_MUTUARIOS?
+SELECT * FROM ID
+INNER JOIN DADOS_MUTUARIOS AS DM
+ON ID.ID_SOLICITANTE = DM.ID_SOLICITANTE;
+
+-- Irei juntar todas as colunas com os dados em comum em uma só e passar para um arquivo .CSV
+-- As tabelas que não se relacionam serão desconsideradas devido as quantidades de campos nulos
+
+SELECT * FROM ID
+INNER JOIN DADOS_MUTUARIOS AS DM
+ON ID.ID_SOLICITANTE = DM.ID_SOLICITANTE
+INNER JOIN EMPRESTIMOS AS E
+ON ID.ID_EMPRESTIMO = E.ID_EMPRESTIMO
+INNER JOIN HISTORICOS_BANCO AS HB
+ON ID.ID_HISTORICO = HB.ID_HISTORICO
+INTO OUTFILE 'analise_risco.csv'
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
