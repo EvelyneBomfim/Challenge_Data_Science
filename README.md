@@ -20,6 +20,7 @@ Para leitura da minha análise mais detalhada, acesse o meu perfil no [Medium](h
 
 
 [Dados originais do Challenge](https://github.com/Mirlaa/Challenge-Data-Science-1ed)
+
 [Dicionário do conjunto de dados original](https://github.com/Mirlaa/Challenge-Data-Science-1ed/tree/main/Dados)
 
 ## 2° semana
