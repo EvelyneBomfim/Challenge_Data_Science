@@ -16,33 +16,33 @@ Tabela contendo os dados pessoais de cada solicitante
 
 Tabela contendo as informações do empréstimo solicitado
 
-| Feature | Característica |
-| --- | --- |
-|`loan_id`|ID da solicitação de empréstico de cada solicitante|
-| `loan_intent` | Motivo do empréstimo: *Pessoal* (`Personal`), *Educativo* (`Education`), *Médico* (`Medical`), *Empreendimento* (`Venture`), *Melhora do lar* (`Homeimprovement`), *Pagamento de débitos* (`Debtconsolidation`) |
-| `loan_grade` | Pontuação de empréstimos, por nível variando de `A` a `G` |
-| `loan_amnt` | Valor total do empréstimo solicitado |
-| `loan_int_rate` | Taxa de juros |
-| `loan_status` | Possibilidade de inadimplência |
-| `loan_percent_income` | Renda percentual entre o *valor total do empréstimo* e o *salário anual* |
+| Feature | Traduzido | Característica |
+| --- | --- | --- |
+|`loan_id`|id_emprestimo|ID da solicitação de empréstico de cada solicitante|
+| `loan_intent` |motivo| Motivo do empréstimo: *Pessoal* (`Personal`), *Educativo* (`Education`), *Médico* (`Medical`), *Empreendimento* (`Venture`), *Melhora do lar* (`Homeimprovement`), *Pagamento de débitos* (`Debtconsolidation`) |
+| `loan_grade` |pontuacao| Pontuação de empréstimos, por nível variando de `A` a `G` |
+| `loan_amnt` |valor_total_emprestimo| Valor total do empréstimo solicitado |
+| `loan_int_rate` |taxa_juros| Taxa de juros |
+| `loan_status` |possibilidade_inadimplencia| Possibilidade de inadimplência |
+| `loan_percent_income` |renda_percentual| Renda percentual entre o *valor total do empréstimo* e o *salário anual* |
 
 
 ### historicos_banco
 
 Histório de emprétimos de cada cliente
 
-| Feature | Característica |
-| --- | --- |
-|`cb_id`|ID do histórico de cada solicitante|
-| `cb_person_default_on_file` | Indica se a pessoa já foi inadimplente: sim (`Y`,`YES`) e não (`N`,`NO`) |
-| `cb_person_cred_hist_length` | Tempo - em anos - desde a primeira solicitação de crédito ou aquisição de um cartão de crédito |
+| Feature | Traduzido | Característica |
+| --- | --- | --- |
+|`cb_id`|id_historico|ID do histórico de cada solicitante|
+| `cb_person_default_on_file` |historico_inadimplente| Indica se a pessoa já foi inadimplente: sim (`Y`,`YES`) e não (`N`,`NO`) |
+| `cb_person_cred_hist_length` |anos_cartao_credito| Tempo - em anos - desde a primeira solicitação de crédito ou aquisição de um cartão de crédito |
 
 ### id
 
 Tabela que relaciona os IDs de cada informação da pessoa solicitante
 
-| Feature | Característica |
-| --- | --- |
-|`person_id`|ID da pessoa solicitante|
-|`loan_id`|ID da solicitação de empréstico de cada solicitante|
-|`cb_id`|ID do histórico de cada solicitante|
+| Feature | Traduzido | Característica |
+| --- | --- | --- |
+|`person_id`|id_solicitante|ID da pessoa solicitante|
+|`loan_id`|id_emprestimo|ID da solicitação de empréstico de cada solicitante|
+|`cb_id`|id_historico|ID do histórico de cada solicitante|
