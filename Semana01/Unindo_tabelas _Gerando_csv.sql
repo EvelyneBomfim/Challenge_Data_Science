@@ -15,8 +15,7 @@ SELECT * FROM ID
 INNER JOIN DADOS_MUTUARIOS AS DM
 ON ID.ID_SOLICITANTE = DM.ID_SOLICITANTE;
 
--- Irei juntar todas as colunas com os dados em comum em uma só e passar para um arquivo .CSV
--- As tabelas que não se relacionam serão desconsideradas devido as quantidades de campos nulos
+-- Irei juntar todas as colunas que se relacionam em uma só e passar para um arquivo .CSV
 
 SELECT * FROM ID
 INNER JOIN DADOS_MUTUARIOS AS DM
