@@ -14,7 +14,7 @@ Foi efetuada a correção das inconsistências, padronizado os valores, traduzid
 
 Para dar continuidade ao trabalho, foram unidos os valores utilizando a tabela de relacionamento, juntando-os através dos ids. Assim, foi possível efetuar a exportação do conjunto de dados para um arquivo csv.
 
-Para leitura da minha análise mais detalhada, acesse o meu perfil no [Medium](https://medium.com/@evelynebomfim/challenge-dados-da-alura-1-semana-26d00116b729).
+-- Para leitura da minha análise mais detalhada, acesse o meu perfil no [Medium](https://medium.com/@evelynebomfim/challenge-dados-da-alura-1-semana-26d00116b729).
 
 [Dicionário do meu conjunto de dados](https://github.com/EvelyneBomfim/Challenge_Data_Science/tree/main/Dados)
 
@@ -24,3 +24,9 @@ Para leitura da minha análise mais detalhada, acesse o meu perfil no [Medium](h
 [Dicionário do conjunto de dados original](https://github.com/Mirlaa/Challenge-Data-Science-1ed/tree/main/Dados)
 
 ## 2° semana
+
+Nesta etapa, o desafio foi a construção de um modelo Machine Learning para predizer quais clientes poderiam ou não se tornar um inadimplente.
+
+Antes de iniciar o modelo ML, foi feito o tratamento do conjunto de dados coletado da 1° etapa do desafio. Utilizando o Python, no Google Colab, foi feita a remoção de dados nulos, tratamento de ouliers, encoding, normalização e balanceamento das variáveis.
+
+Em seguida, foram construídos três modelos de aprendizagem para serem comparados seus resultados: 
