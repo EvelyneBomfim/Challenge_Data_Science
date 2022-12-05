@@ -27,6 +27,13 @@ Para dar continuidade ao trabalho, foram unidos os valores utilizando a tabela d
 
 Nesta etapa, o desafio foi a construção de um modelo Machine Learning para predizer quais clientes poderiam ou não se tornar um inadimplente.
 
-Antes de iniciar o modelo ML, foi feito o tratamento do conjunto de dados coletado da 1° etapa do desafio. Utilizando o Python, no Google Colab, foi feita a remoção de dados nulos, tratamento de ouliers, encoding, normalização e balanceamento das variáveis.
+Antes de iniciar o modelo ML, foi feito o tratamento do conjunto de dados coletado da 1° etapa do desafio. Utilizando o Python, no Google Colab, foi feita a remoção de dados nulos, tratamento de ouliers, encoding e normalização.
 
-Em seguida, foram construídos três modelos de aprendizagem para serem comparados seus resultados: 
+Percebemos que a base de dados está desbalanceada, sendo necessário utilizar oversampling ou undersampling. Para garantir que será criado o melhor modelo, usei ambos para comparar seus resultados.
+
+Em seguida, foram construídos três modelos de aprendizagem: Decision Tree Classifier, Gradient Boosting Classifier e Logistic Regression.
+
+Foi escolhido e exportado para uso futuro o modelo Gradient Boosting com undersampling por ter o melhor resultado.
+
+## 3° semana
+
